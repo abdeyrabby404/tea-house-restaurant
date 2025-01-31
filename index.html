@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- For using font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- For using font awesome logo my kit -->
+    <script src="https://kit.fontawesome.com/379d09de9a.js" crossorigin="anonymous"></script>
+    <!-- For using css tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    <header>
-        <nav>
-
-        </nav>
-        <div class="banner">
-            
+    <main class="max-w-screen-xl m-auto px-16 lg:px-28" >
+        <header class="flex pt-10 mb-20 flex-col justify-center items-center lg:flex-row">
+            <!-- Banner Text -->
+        <div>
+            <h1 class="text-5xl font-bold text-[#1C1C1C] lg:text-7xl">It's good<br>
+                tea time at The<br> Tea House</h1><br>
+            <p class="text-gray-500 w-3/4 text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p><br>
+            <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-4 rounded-lg text-white font-bold">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
         </div>
-    </header>
-    <main>
-
+        <!-- Banner Image -->
+         <div class="relative">
+            <div class="banner_image">
+                <img src="images/banner.png" alt="">
+            </div>
+            <!-- Banner rating card -->
+            <div class="absolute bg-white flex items-center shadow-lg rounded-lg px-2 py-2  md:px-10 lg:py-4 gap-1 bottom-6 left-[5rem] z-10 ">
+                <div class="star_icon text-2xl"><i class="fa-solid fa-star text-amber-500"></i></div>
+                <div class="rating_text">
+                    <h2 class="lg:text-2xl font-bold">5.00</h2>
+                    <p class="text-gray-500">Trust Pilot Ratings</p>
+                </div>
+            </div>
+         </div>
+        </header>
     </main>
-    <footer>
-
-    </footer>
 </body>
+
 </html>
